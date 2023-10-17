@@ -1,29 +1,123 @@
 /* apply 
 box-sizing: border-box
-to all elements */
+to all sections */
 
+/* universal stuff */
 
-.Navigation-bar {
-  box-sizing: border-box;
-  min-height: 100px;
-  border: 10px solid;
-  border-color: black;
-  flex-shrink: 0;
-  
-
-}
-
-.Navigation-bar  li {
-  box-sizing: border-box;
-  display: inline-flex;
-  border: 5px solid;
-  border-color: grey;
-  margin: 1%;
-}
-
-.test {
+.container {
   box-sizing: border-box;
   display: flex;
-  border: 10px solid;
-  border-color: yellow;
+}
+
+.narrowed {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center {
+  justify-content: center;
+}
+
+
+
+/* header shit*/
+
+header {
+  box-sizing: border-box;
+  background-color:blanchedalmond;
+}
+
+/* aligns all header elements */
+.nav  {
+  align-items: center;
+}
+
+#logo {
+  height: 80px;
+}
+
+/*spaces the nav buttons from the logo and rego button*/
+.Navigation-bar {
+  display: flex;
+  margin: 0 auto 0 2rem;
+}
+
+/*All the nav button spacing*/
+.Navigation-bar ul {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-around;
+}
+
+.nav-button {
+  padding: 0.5rem;
+}
+
+#Rego-button {
+  padding: 1rem;
+  border-radius: 0.4rem;
+  background-color: white;
+  font-weight:200;
+}
+/*end of header shit*/
+
+
+
+
+
+/*landing*/
+
+/*this handles the pics on landing*/
+.landing-container {
+  display: grid;
+}
+
+.grid {
+  grid-area: 1/1;
+}
+
+#landing-pic {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+#landing-logo {
+  width: 60%;
+  height: 300px;
+  margin: auto;
+}
+
+/* This handles content in the landing*/
+
+.landing-content {
+  flex-direction: column;
+  padding-top: 100px;
+}
+
+.landing h1 {
+  font-size: 2rem;
+  color: blanchedalmond;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Fonts and shit */
+.Roboto-Slab {
+  font-family: 'Roboto Slab', serif;
+}
+
+.Noto-Serif {
+  font-family:'Noto Serif', serif;
 }

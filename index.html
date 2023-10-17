@@ -4,32 +4,70 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--1st reset, 2nd is style-->
+  <link rel="stylesheet" type="text/css" href="reset.css"/>
   <link rel="stylesheet" type="text/css" href="style.css"/>
   <title>z5255825 Tutorial 4</title>
+
+  <!--Imported fonts from google-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@1,200&family=Roboto+Slab:wght@100;200;300;400;500;600&display=swap" rel="stylesheet"> 
 </head>
 
 <body>
 
-  <!--Navigation bar-->
-  <nav>
-      <ul>
-        <li>Home</li>
-        <li>For students & Professionals</li>
-        <li>Register your interest</li>
-        <li>Resources</li>
-        <li>Contact Us</li>
-      </ul>
-  </nav>
+  <!--header-->
+  <header>
+    <div class="container nav narrowed Roboto-Slab">
 
-  <h2>Center Align Elements</h2>
-  <p>To horizontally center a block element (like div), use margin: auto;</p>
+      <img id="logo" src="./images/logos/logo.png"/>
+      
 
-  <div class="center">
-    <p>Hello World!</p>
+      <nav class="Navigation-bar">
+          <ul>
+            <li><a class="nav-button">Home</a></li>
+            <li><a class="nav-button">For students & Professionals</a></li>
+            <li><a class="nav-button">Resources</a></li>
+            <li><a class="nav-button">Contact Us</a></li>
+          </ul>
 
-    <p>Testing the formatting here, this should be <b>bold</b> and this should be <del>italicised</del> and end of sentence</p>
-  </div>
+      </nav>
 
+      <div id="Rego-button">
+        <h3><a class="nav-button">Register your Interest</a></h3>
+      </div>
+    </div>
+  </header>
+
+
+  <section class="landing">
+    
+    <!--What you see upon opening-->
+    <div class="landing-container">
+      
+      <!--The big pic-->
+      <img id="landing-pic" class="grid" src="./images/conf/main.jpg"/>
+      
+      <!--everything on top of the big pic-->
+      <div class="grid">
+
+        <div class="container narrowed landing-content">
+          <h1 class="Noto-Serif">Nawab Group Presents...</h1>
+          <img id="landing-logo" src="./images/logos/body.png"/>
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </section>
+
+  <section class="container narrowed">
+    <h1 class="">testing moment</h1>
+  </section>
 
 </body>
 </html>
