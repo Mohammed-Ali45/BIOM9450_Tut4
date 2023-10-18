@@ -2,39 +2,68 @@
 box-sizing: border-box
 to all sections */
 
-/* universal stuff */
-
+/* universal classes for standardised styling */
 .container {
   box-sizing: border-box;
   display: flex;
 }
 
 .narrowed {
+  max-width: 1100px;
+}
+
+.less-narrowed {
   max-width: 1440px;
+}
+
+.center {
   margin-left: auto;
   margin-right: auto;
 }
 
-.center {
-  justify-content: center;
+.flex-column {
+  flex-direction: column;
 }
 
+/* For when the header
+ covers stuff at the top */
+.header-fixer {
+  height: 5rem;
+}
 
+h1 {
+  font-size: 2.5rem;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  color: rgb(187, 161, 122);
+}
 
-/* header shit*/
+h3 {
+  font-size: 1.5rem;
+  color: #3b3937;
+}
+.body-para {
+  font-size: 1.3rem;
+  line-height: normal;
+  font-weight: 300;
+}
+/* End universal classes */
 
+/* header styling*/
 header {
   box-sizing: border-box;
-  background-color:blanchedalmond;
+  background-color: blanchedalmond;
+  position: fixed;
+  width: 100%;
 }
 
 /* aligns all header elements */
-.nav  {
+.nav {
   align-items: center;
 }
 
 #logo {
-  height: 80px;
+  height: 5rem;
 }
 
 /*spaces the nav buttons from the logo and rego button*/
@@ -52,24 +81,52 @@ header {
 
 .nav-button {
   padding: 0.5rem;
+  text-decoration: none;
+  border-radius: 0.4rem;
+  color: black;
+
+  transition: background-color 0.2s, color 0.2s;
 }
 
-#Rego-button {
+.nav-button-rego {
+  text-decoration: none;
   padding: 1rem;
   border-radius: 0.4rem;
+  color: #3b3937;
   background-color: white;
-  font-weight:200;
+  font-weight: 400;
+
+  transition: background-color 0.5s, color 0.5s;
 }
-/*end of header shit*/
 
+/* all the pseudoclasses for the main nav-buttons */
+/* for the logo on the header*/
 
+.nav-button:visited {
+  color: black;
+}
 
+.nav-button:hover {
+  background-color: #3b3937;
+  color: blanchedalmond;
+}
 
+/* specifically for the reg button */
+.nav-button-rego:visited {
+  color: #3b3937;
+}
 
+.nav-button-rego:hover {
+  background-color: #3b3937;
+  color: white;
+}
+
+/*end of header styling*/
+
+/* This is now index.html specific styling */
 /*landing*/
-
 /*this handles the pics on landing*/
-.landing-container {
+.landing {
   display: grid;
 }
 
@@ -85,14 +142,12 @@ header {
 
 #landing-logo {
   width: 60%;
-  height: 300px;
   margin: auto;
 }
 
 /* This handles content in the landing*/
 
 .landing-content {
-  flex-direction: column;
   padding-top: 100px;
 }
 
@@ -102,22 +157,95 @@ header {
   text-align: center;
 }
 
+.quote {
+  font-size: 1.5rem;
+  color: blanchedalmond;
+  margin: auto;
+}
 
+/* Main venue info */
+.venue-info {
+  margin-top: 5%;
+  width: 35%;
+}
+.date-loc {
+  color: blanchedalmond;
+  align-items: center;
+}
 
+.date-loc img {
+  width: 6%;
+  padding: 10px;
+}
 
+/* Big rego button */
+.Big-Rego-button {
+  box-sizing: border-box;
 
+  width: fit-content;
 
+  margin-top: 4rem;
+}
 
+.Big-Rego-button a {
+  text-decoration: none;
+  color: blanchedalmond;
+  text-align: center;
+  font-size: 2rem;
 
+  padding: 1rem;
 
+  border: solid 0.1rem;
+  border-color: blanchedalmond;
+  border-radius: 0.4rem;
 
+  transition: background-color 0.5s, color 0.5s;
+}
 
+/* pseudoclasses for the big button */
+.Big-Rego-button a:hover {
+  background-color: white;
+  color: rgb(187, 161, 122);
+}
 
-/* Fonts and shit */
+/* end of index.html specific styling */
+
+/* whats-on.html specific styling */
+
+.date {
+  margin-left: 20%;
+  font-size: 2rem;
+}
+
+#event-table {
+  margin-top: 100px;
+}
+
+#event-table thead {
+  font-size: 1.5rem;
+}
+
+#event-table th,
+td {
+  padding: 15px;
+  vertical-align: middle;
+
+  border: solid 2px;
+}
+
+.table-pics {
+  max-width: 30rem;
+}
+
+/* Fonts */
 .Roboto-Slab {
-  font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
 }
 
 .Noto-Serif {
-  font-family:'Noto Serif', serif;
+  font-family: "Noto Serif", serif;
+}
+
+.Noto-Sans {
+  font-family: "Noto Sans", sans-serif;
 }
