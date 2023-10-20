@@ -15,7 +15,6 @@ All fonts imported from google fonts
 
 - Roboto Slab is used for header navigation, emphasized text in graphics, and headings.
 - Noto-Serif is used for the X in the logo and emphasized text in graphics, typically italicised.
-- Noto-Sans is used for body text
 
 ## Header styling
 

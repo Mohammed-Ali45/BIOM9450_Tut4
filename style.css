@@ -35,18 +35,57 @@ h1 {
   font-size: 2.5rem;
   margin-top: 3rem;
   margin-bottom: 2rem;
-  color: rgb(187, 161, 122);
+  color: #bba17a;
 }
 
 h3 {
   font-size: 1.5rem;
-  color: #3b3937;
+  color: #bba17a;
 }
 .body-para {
   font-size: 1.3rem;
   line-height: normal;
   font-weight: 300;
 }
+
+.link {
+  color: #bba17a;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.link:visited {
+  color: #bba17a;
+  text-decoration: none;
+}
+
+.in-page {
+  scroll-margin-top: 5em;
+}
+
+::selection {
+  background: #bba17a;
+  color: white;
+}
+
+.top {
+  padding-top: 10px;
+  color: #3b3937;
+  font-size: 1.2rem;
+}
+
+.top:visited {
+  color: #3b3937;
+}
+
+.white-on-grey {
+  background-color: #3b3937;
+  color: white;
+}
+
 /* End universal classes */
 
 /* header styling*/
@@ -123,8 +162,62 @@ header {
 
 /*end of header styling*/
 
-/* This is now index.html specific styling */
+/* Start of footer styling */
+
+footer {
+  font-family: "Noto Sans", sans-serif;
+
+  background-color: #3b3937;
+  color: #bba17a;
+
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+/* Workshop organiser contact info */
+.footer-info ul {
+  line-height: 1.2rem;
+}
+
+.footer-info {
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.footer-name {
+  text-indent: 21px;
+}
+
+.footer-info img {
+  vertical-align: middle;
+  max-height: 1rem;
+  padding: 0px 5px 5px 0;
+}
+
+/* To only be used when necessary */
+.footer-margin {
+  margin-top: 5rem;
+}
+
+/* Socials and address section */
+
+#socials {
+  margin-left: auto;
+  margin-top: auto;
+}
+
+#socials img {
+  height: 40px;
+  border-radius: 0.2rem;
+  margin-left: 0.4rem;
+}
+
+/* end footer styling */
+
+/* Start of index.html specific styling */
+
 /*landing*/
+
 /*this handles the pics on landing*/
 .landing {
   display: grid;
@@ -176,6 +269,7 @@ header {
 .date-loc img {
   width: 6%;
   padding: 10px;
+  margin-left: 22%;
 }
 
 /* Big rego button */
@@ -205,36 +299,153 @@ header {
 /* pseudoclasses for the big button */
 .Big-Rego-button a:hover {
   background-color: white;
-  color: rgb(187, 161, 122);
+  color: #bba17a;
 }
 
 /* end of index.html specific styling */
 
 /* whats-on.html specific styling */
 
+#campus-map {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
 .date {
   margin-left: 20%;
+  margin-top: 15%;
   font-size: 2rem;
+  font-weight: 400;
+  color: #bba17a;
 }
 
-#event-table {
-  margin-top: 100px;
+.go-right {
+  margin-left: 25%;
 }
 
-#event-table thead {
-  font-size: 1.5rem;
+.time-row {
+  font-size: 2rem;
+  font-weight: 800;
+  border-bottom: solid 2px;
 }
 
 #event-table th,
 td {
   padding: 15px;
-  vertical-align: middle;
 
-  border: solid 2px;
+  border: solid 0px;
 }
 
 .table-pics {
-  max-width: 30rem;
+  max-width: 40rem;
+  max-height: 20rem;
+  vertical-align: text-top;
+}
+
+.loc-pin {
+  font-size: 1.5rem;
+}
+
+.loc-pin img {
+  max-width: 7%;
+  vertical-align: middle;
+}
+
+/* whats-on.html specific styling */
+
+/* registration.html specific styling */
+#rego-page {
+  background-color: white;
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  margin-top: 5rem;
+  padding: 4rem;
+}
+
+#rego-form {
+  padding: 2rem;
+  margin-top: 10%;
+  font-size: 1.4rem;
+}
+
+#rego-form input,
+textarea {
+  font-size: 1.3rem;
+  margin-top: 10px;
+  margin-bottom: 50px;
+
+  border: solid 1px #3b3937;
+}
+
+#rego-form input:focus {
+  border: solid 1px blanchedalmond;
+  outline: solid 1px #bba17a;
+}
+
+.required {
+  color: red;
+}
+
+/* End of registration.html specific styling*/
+
+/*Start of for-students-and-professionals.html
+specific styling */
+
+#research {
+  margin-bottom: 3rem;
+}
+
+#research img {
+  flex-shrink: 0;
+  width: 50%;
+  height: 50%;
+}
+
+#research div {
+  padding: 50px;
+}
+
+#guidelines {
+  line-height: 3rem;
+  list-style-type: disc;
+}
+
+#abstract-sections {
+  text-indent: 80px;
+  list-style-type: square;
+  list-style-position: inside;
+}
+
+#abstract-form {
+  margin-top: 3rem;
+}
+
+#abstract-form input {
+  font-size: 2rem;
+  color: #3b3937;
+}
+
+/*End of for-students-and-professionals.html
+specific styling */
+
+/* Start of plenary session specific styling */
+.plenary-pic {
+  width: 100%;
+}
+
+.plenary-info {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.plenary-info img {
+  width: 3%;
+  vertical-align: middle;
+}
+
+#HL7-logo {
+  width: 40%;
+  margin: auto;
 }
 
 /* Fonts */
