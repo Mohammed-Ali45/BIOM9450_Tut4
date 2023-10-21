@@ -302,6 +302,28 @@ footer {
   color: #bba17a;
 }
 
+#intro {
+  margin-bottom: 5rem;
+}
+
+#advancement img {
+  flex-shrink: 0;
+  width: 50%;
+  height: 50%;
+}
+
+#advancement div {
+  padding: 50px;
+}
+
+.index-text {
+  font-size: 2rem;
+}
+
+#roundhouse {
+  margin-top: 3rem;
+  max-width: 100%;
+}
 /* end of index.html specific styling */
 
 /* whats-on.html specific styling */
@@ -330,10 +352,8 @@ footer {
 }
 
 #event-table th,
-td {
+#event-table td {
   padding: 15px;
-
-  border: solid 0px;
 }
 
 .table-pics {
@@ -369,7 +389,7 @@ td {
 }
 
 #rego-form input,
-textarea {
+#rego-form textarea {
   font-size: 1.3rem;
   margin-top: 10px;
   margin-bottom: 50px;
@@ -377,7 +397,8 @@ textarea {
   border: solid 1px #3b3937;
 }
 
-#rego-form input:focus {
+#rego-form input:focus,
+#rego-form textarea:focus {
   border: solid 1px blanchedalmond;
   outline: solid 1px #bba17a;
 }
@@ -446,6 +467,81 @@ specific styling */
 #HL7-logo {
   width: 40%;
   margin: auto;
+}
+
+#ICD-10-book {
+  width: 40%;
+  margin: 2rem auto;
+}
+
+/* Start of resources.html styling */
+.resources {
+  margin-top: 3rem;
+  font-size: 1.5rem;
+  list-style-type: square;
+}
+
+.resources li {
+  padding: 10px;
+}
+
+/* End of resources.html styling */
+
+/* Start of contact-us.html styling */
+#OR {
+  width: 100%;
+}
+
+#contact-us h2 {
+  color: #3b3937;
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+#contact-boxes {
+  margin-top: 5rem;
+  justify-content: space-between;
+}
+
+#contact-boxes div {
+  background-color: blanchedalmond;
+  padding: 2rem;
+  width: 43%;
+}
+
+#email-inquiry label {
+  font-size: 1.4rem;
+}
+
+#email-inquiry input,
+#email-inquiry textarea {
+  font-size: 1.4rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#email-inquiry input,
+#email-inquiry textarea {
+  border: solid 1px #3b3937;
+}
+
+#email-inquiry input:focus,
+#email-inquiry textarea:focus {
+  border: solid 1px blanchedalmond;
+  outline: solid 1px #bba17a;
+}
+
+#contact-details {
+  font-size: 1.4rem;
+}
+
+#contact-details li {
+  padding-bottom: 80px;
+}
+
+#contact-details a {
+  color: #3b3937;
+  text-decoration: underline;
 }
 
 /* Fonts */

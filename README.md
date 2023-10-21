@@ -15,8 +15,13 @@ All fonts imported from google fonts
 
 - Roboto Slab is used for header navigation, emphasized text in graphics, and headings.
 - Noto-Serif is used for the X in the logo and emphasized text in graphics, typically italicised.
+- Noto-Sans is used for body text.
 
 ## Header styling
 
 Header height is set by the height of the logo, which is set to 80px by default. Potential issues may arise from
 very high resolution screens viewing the website.
+
+## Concerns
+
+The entirety of this project was built using a 1080p monitor. While extensive testing was done at different zoom levels, it is unknown whether the page will display correctly or as desired on a higher or lower resolution screen.
