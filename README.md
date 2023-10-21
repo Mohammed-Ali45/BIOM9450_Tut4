@@ -25,3 +25,8 @@ very high resolution screens viewing the website.
 ## Concerns
 
 The entirety of this project was built using a 1080p monitor. While extensive testing was done at different zoom levels, it is unknown whether the page will display correctly or as desired on a higher or lower resolution screen.
+
+## Color palette
+
+Hex code bba17a was used for headings on both white and grey backgrounds, blanched almond was used for select
+backgrounds, styling elements. Hex code 3b3937 was used for various backgrounds and text elements.
